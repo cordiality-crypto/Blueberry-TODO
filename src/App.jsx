@@ -1,4 +1,4 @@
-import Task from "./components/task";
+import Task from "./components/Task";
 import { useState, useEffect, useRef } from "react";
 
 export default function App() {

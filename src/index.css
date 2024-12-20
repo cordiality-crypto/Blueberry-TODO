@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Playwrite+ES+Deco+Guides&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #121212;
+    --primary-color: #1A2E45;
+    --secondary-color: #FF8C42;
+    --accent-color: #5A9BD6;
+    --text-color: #EAEAEA;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: transparent; 
+    border-radius: 1000px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color); 
+    border-radius: 1000px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Playwrite ES Deco Guides", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16pt;
+    color: var(--text-color);
+}  
+
+body {
+    min-height: 100vh;
+    padding: 10px;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body {
+    min-height: 100vh;
+    padding: 10px;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    margin-top: auto;
+    font-size: 10px;
+    color: var(--secondary-color);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 12pt;
+    }
+}
